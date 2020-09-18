@@ -1,5 +1,9 @@
 gem 'rails-i18n'
 
+gem_group :development do
+  gem 'brakeman', require: false
+end
+
 initializer 'i18n.rb', <<-CODE
 # encoding: utf-8
 
